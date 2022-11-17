@@ -8,29 +8,22 @@ public class Time {
 	private boolean f12;
 	private String AP;
 
-	public Time(int hour, int minute) {
+	public Time(int hour, int minute, boolean f12, String AP) {
 		super();
 		this.hour = hour;
 		this.minute = minute;
 		this.f12 = false;
-	}
-
-	public Time(int hour, int minute, String AP) {
-		super();
-		this.hour = hour;
-		this.minute = minute;
-		this.f12 = true;
 		this.AP = AP;
 	}
 
 	public void convert() {
 		if (this.f12) {
-			if (this.AP.equals("P")) {
+			if (this.AP.equals("PM")) {
 				this.hour += 12;
 			}
 			f12 = false;
 		} else {
-			if (this.AP.equals("A")) {
+			if (this.AP.equals("AM")) {
 				this.hour -= 12;
 			}
 			f12 = true;

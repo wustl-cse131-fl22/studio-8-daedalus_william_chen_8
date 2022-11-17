@@ -18,13 +18,6 @@ public class Date {
 		this.holiday = holiday;
 	}
 
-	public Date(int month, int date, int year) {
-		super();
-		this.month = month;
-		this.date = date;
-		this.year = year;
-	}
-
 	@Override
 	public String toString() {
 		return "Date: " + month + "/" + date + "/" + year;
@@ -49,8 +42,8 @@ public class Date {
 
 	public static void main(String[] args) {
 		LinkedList<Date> list = new LinkedList<Date>();
-		Date d1 = new Date(9, 1, 2022);
-		Date d2 = new Date(9, 1, 2022);
+		Date d1 = new Date(9, 1, 2022, false);
+		Date d2 = new Date(9, 1, 2022, false);
 		list.add(d1);
 		list.add(d2);
 		list.add(d1);
