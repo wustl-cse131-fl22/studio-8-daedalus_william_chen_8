@@ -54,12 +54,10 @@ public class Time {
 		if (this.f12 == other.f12) {
 			if (this.f12 && other.f12) {
 				return Objects.equals(AP, other.AP) && hour == other.hour && minute == other.minute;
-			}
-			else {
+			} else {
 				return hour == other.hour && minute == other.minute;
 			}
-		}
-		else {
+		} else {
 			return Math.abs(hour - other.hour) == 12 && minute == other.minute;
 		}
 	}

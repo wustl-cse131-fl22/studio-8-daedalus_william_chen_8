@@ -10,15 +10,15 @@ public class Date {
 	private int year;
 	private boolean holiday;
 
-    public Date(int month, int date, int year, boolean holiday) {
+	public Date(int month, int date, int year, boolean holiday) {
 		super();
 		this.month = month;
 		this.date = date;
 		this.year = year;
 		this.holiday = holiday;
 	}
-    
-    public Date(int month, int date, int year) {
+
+	public Date(int month, int date, int year) {
 		super();
 		this.month = month;
 		this.date = date;
@@ -49,19 +49,18 @@ public class Date {
 
 	public static void main(String[] args) {
 		LinkedList<Date> list = new LinkedList<Date>();
-		Date d1 = new Date(9,1,2022);
-		Date d2 = new Date(9,1,2022);
+		Date d1 = new Date(9, 1, 2022);
+		Date d2 = new Date(9, 1, 2022);
 		list.add(d1);
 		list.add(d2);
 		list.add(d1);
 		System.out.println(list);
-		
+
 		HashSet<Date> set = new HashSet<Date>();
 		set.add(d1);
 		set.add(d2);
 		set.add(d1);
 		System.out.println(set);
-    }
-	
+	}
 
 }
